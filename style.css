@@ -517,3 +517,133 @@ nav .fa-solid.fa-circle-xmark,.fa-solid.fa-bars{
         font-size: 14px;
     }
 }
+
+/* ===== Character Gallery Header ===== */
+.char-gallery-header{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.char-gallery-title{
+  font-size: 52px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.char-gallery-disclaimer{
+  font-size: 14px;
+  color: #ababab;
+  font-style: italic;
+}
+
+
+/* ===== Character Carousel ===== */
+.char-carousel{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 48px 1fr 48px;
+  align-items: center;
+  gap: 12px;
+}
+
+.char-viewport{
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.char-track{
+  display: flex;
+  transition: transform 450ms ease;
+  will-change: transform;
+}
+
+/* 4 visible by default */
+.char-card{
+  flex: 0 0 25%;
+  padding: 10px;
+}
+
+.char-card{
+  text-align: center;
+}
+
+.char-img{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;     /* pick what looks best: 16/9, 4/3, 1/1 */
+  object-fit: contain;      /* show the whole image (no cropping) */
+  border-radius: 14px;
+  display: block;
+  background: #262626;      /* letterbox color */
+}
+
+.char-name{
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Buttons */
+.char-btn{
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  border: 1px solid #B0007E;
+  background: #0f0f0f;
+  color: #fff;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.char-btn:hover{ background: #B0007E; }
+.char-btn:active{ transform: scale(0.96); }
+.char-btn:disabled{
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Responsive: 3 / 2 / 1 visible */
+@media (max-width: 1100px){
+  .char-card{ flex-basis: 33.3333%; }
+}
+@media (max-width: 800px){
+  .char-carousel{ grid-template-columns: 44px 1fr 44px; }
+  .char-card{ flex-basis: 50%; }
+  .char-img{ height: 200px; }
+}
+@media (max-width: 520px){
+  .char-card{ flex-basis: 100%; }
+  .char-img{ height: 240px; }
+}
+
+.char-media{
+  position: relative;
+}
+
+.char-toggle{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid #B0007E;
+  background: rgba(0,0,0,0.65);
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1;
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.char-toggle:hover{
+  background: #B0007E;
+}
+
+.char-toggle:active{
+  transform: scale(0.96);
+}
