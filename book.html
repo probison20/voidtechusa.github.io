@@ -32,9 +32,6 @@
         <div class="row-B">
             <div class="about-col-1">
                 <img src="Images/JACK_NULL_DESIGN1.PNG">
-                <p><strong>Art by </strong>
-                    <a href="https://www.mayawongdesigns.art/" class="highlight-link" target="_blank">Maya Wong</a>
-                </p>
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">The Plot</h1>
@@ -51,16 +48,114 @@
                 <img src="Images/TSOF.png">
             </div>
             <div class="about-col-3">
-                <img src="Images/TSOFCover.png">
-                <p><strong>Art by </strong>
-                    <a href="https://www.mayawongdesigns.art/" class="highlight-link jack" target="_blank">Maya Wong</a>
-                </p>
+                <img src="Images/TSOF_Cover.png">
             </div>
         </div>
+
+        <!-- Character Gallery Header -->
+<div class="char-gallery-header">
+  <h2 class="char-gallery-title">Character Gallery</h2>
+  <p class="char-gallery-disclaimer">
+    Disclaimer: Generative AI was used in the creation of these character portraits. Original concept art for some characters is available.
+  </p>
+</div>
+
+
+        <!-- Character Carousel -->
+<section class="char-carousel" aria-label="Character gallery">
+  <button class="char-btn prev" type="button" aria-label="Previous characters">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+
+  <div class="char-viewport">
+    <div class="char-track">
+      <!-- Repeat these .char-card blocks for each character -->
+      <article class="char-card">
+    <div class="char-media">
+        <img
+        class="char-img"
+        src="Images/Jack_Final.png"
+        alt="Jack Crasher"
+        data-final="Images/Jack_Final.png"
+        data-concept="Images/Jack_Concept.png"
+        >
+        <button class="char-toggle" type="button" aria-pressed="false">
+        Concept
+        </button>
+    </div>
+    </article>
+
+      <article class="char-card">
+  <div class="char-media">
+    <img
+      class="char-img"
+      src="Images/Null_Final.png"
+      alt="Null"
+      data-final="Images/Null_Final.png"
+      data-concept="Images/Null_Concept.png"
+    >
+    <button class="char-toggle" type="button" aria-pressed="false">
+      Concept
+    </button>
+  </div>
+</article>
+
+
+      <article class="char-card">
+        <img class="char-img" src="Images/Jane.png" alt="Jane Crasher">
+      </article>
+
+      <article class="char-card">
+        <img class="char-img" src="Images/Aaron.png" alt="Aaron Wolfe">
+      </article>
+
+      <article class="char-card">
+  <div class="char-media">
+    <img
+      class="char-img"
+      src="Images/Malcolm_Final.png"
+      alt="Malcolm O'Connor"
+      data-final="Images/Malcolm_Final.png"
+      data-concept="Images/Malcolm_Concept.png"
+    >
+    <button class="char-toggle" type="button" aria-pressed="false">
+      Concept
+    </button>
+  </div>
+</article>
+
+      <article class="char-card">
+        <img class="char-img" src="Images/Megan.png" alt="Megan Walker">
+      </article>
+
+      <article class="char-card">
+  <div class="char-media">
+    <img
+      class="char-img"
+      src="Images/Priscilla_Final.png"
+      alt="Priscilla Kensington"
+      data-final="Images/Priscilla_Final.png"
+      data-concept="Images/Priscilla_Concept.png"
+    >
+    <button class="char-toggle" type="button" aria-pressed="false">
+      Concept
+    </button>
+  </div>
+</article>
+
+    </div>
+  </div>
+
+  <button class="char-btn next" type="button" aria-label="Next characters">
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+</section>
+
     </div>    
 <div class="copyright">
     <p>Copyright © Patrick Robison & The Sons of Fate</p>
 </div>
 </div>
+<script src="book.js"></script>
 </body>
 </html>
